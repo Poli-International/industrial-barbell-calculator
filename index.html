@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    if (window.self !== window.top) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      window.addEventListener('message', function(e) {
+        if (e.data && e.data.type === 'poli-theme') {
+          document.documentElement.setAttribute('data-theme', e.data.light ? 'light' : 'dark');
+        }
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate the correct industrial barbell length from your hole-to-hole distance. Accounts for ball protrusion and fresh or healed tissue clearance.">
+  <title>Industrial Barbell Length Calculator | Poli International</title>
+  <link rel="stylesheet" href="/tools/industrial-barbell-calculator/css/style.css">
+</head>
+<body>
+
+<div class="tool-wrapper">
+
+  <header class="tool-header">
+    <div class="tool-header__badge">📏 Industrial / Scaffold Sizing</div>
+    <h1>Industrial Barbell Length Calculator</h1>
+    <p>
+      Measure the distance between your two piercing holes, select your ball size and
+      healing stage, and get the correct barbell length.
+    </p>
+  </header>
+
+  <div class="diagram-hint">
+    <strong>What to measure</strong>
+    Measure from the <em>outer edge of the entry hole</em> to the <em>outer edge of the exit hole</em>
+    — this is your hole-to-hole distance. The calculator adds ball protrusion and healing clearance automatically.
+    <div class="diagram-ascii">  ●━━━━━━━━━━━━━━━━━━━━━━━━━━━━●
+  ball  ←——hole to hole——→  ball
+        [   your input   ]</div>
+  </div>
+
+  <div class="input-card">
+    <div class="form-grid">
+      <div class="form-field">
+        <label for="ball-size">Ball diameter</label>
+        <select id="ball-size" class="input-field">
+          <option value="3mm">3 mm (small / fine)</option>
+          <option value="4mm" selected>4 mm (standard)</option>
+          <option value="5mm">5 mm (large)</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="healing-stage">Healing stage</label>
+        <select id="healing-stage" class="input-field">
+          <option value="fresh">Fresh / unhealed</option>
+          <option value="healed">Fully healed</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-field" style="margin-bottom: 1.25rem;">
+      <label for="hole-distance">Hole-to-hole distance</label>
+      <div class="input-suffix">
+        <input id="hole-distance" type="number" class="input-field" min="20" max="80" step="0.5" placeholder="e.g. 38">
+        <span class="suffix-tag">mm</span>
+      </div>
+    </div>
+    <button id="calc-btn" class="btn btn-primary">📏 Calculate Length</button>
+  </div>
+
+  <div id="results"></div>
+
+  <div class="disclaimer">
+    <strong>Note:</strong> Industrial piercings span two cartilage holes — healing is typically 6–12 months
+    and the leverage of a long barbell makes them particularly sensitive to improper sizing.
+    Always have a professional piercer confirm your measurement. Internal length refers to the
+    threaded shaft between the two ball seats.
+  </div>
+
+</div>
+
+<script src="/tools/industrial-barbell-calculator/js/app.js"></script>
+</body>
+</html>
