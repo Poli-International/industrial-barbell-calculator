@@ -17,13 +17,55 @@
   <meta name="description" content="Calculate the correct industrial barbell length from your hole-to-hole distance. Accounts for ball protrusion and fresh or healed tissue clearance.">
   <title>Industrial Barbell Length Calculator | Poli International</title>
   <link rel="stylesheet" href="/tools/industrial-barbell-calculator/css/style.css">
-</head>
+  <link rel="stylesheet" href="/tools/shared/theme.css">
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Industrial Barbell Length Calculator",
+  "url": "https://poliinternational.com/tools/industrial-barbell-calculator/",
+  "description": "Calculate the correct industrial (scaffold) barbell length from your hole-to-hole distance. Ball protrusion and fresh/healed clearance included.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "Poli International",
+    "url": "https://poliinternational.com"
+  },
+  "dateModified": "2026-07-01",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true
+}
+</script>
+
+  <script src="/js/input-guards.js"></script>
+
+  <script src="/tools/shared/share-card.js"></script>
+<link rel="stylesheet" href="/tools/shared/print.css" media="print">
+  <link rel="stylesheet" href="/tools/shared/a11y.css">
+  </head>
 <body>
 
 <div class="tool-wrapper">
 
   <header class="tool-header">
-    <div class="tool-header__badge">📏 Industrial / Scaffold Sizing</div>
+    <div class="tool-header__badge"><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-ruler></use></svg> Industrial / Scaffold Sizing</div>
     <h1>Industrial Barbell Length Calculator</h1>
     <p>
       Measure the distance between your two piercing holes, select your ball size and
@@ -65,7 +107,7 @@
         <span class="suffix-tag">mm</span>
       </div>
     </div>
-    <button id="calc-btn" class="btn btn-primary">📏 Calculate Length</button>
+    <button id="calc-btn" class="btn btn-primary"><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-ruler></use></svg> Calculate Length</button>
   </div>
 
   <div id="results"></div>
@@ -80,5 +122,7 @@
 </div>
 
 <script src="/tools/industrial-barbell-calculator/js/app.js"></script>
+
+  <script src="/tools/industrial-barbell-calculator/js/share.js"></script>
 </body>
 </html>
