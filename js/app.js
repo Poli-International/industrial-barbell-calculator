@@ -51,7 +51,7 @@ function buildResult(dist, ball, protrusion, stage, clearance, minRequired, best
   return `
     <div class="result-card">
       <div class="result-header">
-        <span class="result-icon">📏</span>
+        <span class="result-icon"><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-ruler></use></svg></span>
         <div>
           <div class="result-title">${bestFit} mm barbell</div>
           <div class="result-sub">Industrial — ${escHtml(stageLabel)} tissue · ${escHtml(ball)} balls</div>
