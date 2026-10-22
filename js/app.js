@@ -96,7 +96,7 @@ function buildResult(dist, ball, protrusion, stage, clearance, minRequired, best
         ${stage === 'fresh'
           ? 'the extra clearance accommodates swelling across both holes. Industrials are high-trauma piercings — expect 6–12 months of healing. Do not change jewellery until fully healed and confirmed by your piercer.'
           : 'a more precise fit reduces the lever effect that causes irritation bumps. Only downsize once healing is complete.'}
-        Always use implant-grade material — <a href="https://poliinternational.com/bioflex/" target="_blank" rel="noopener noreferrer">BioFlex® polymer</a>
+        Always use implant-grade metal or <a href="https://poliinternational.com/bioflex/" target="_blank" rel="noopener noreferrer">BioFlex® body jewelry</a>
         or ASTM F136 titanium for initial piercings.
       </div>
     </div>`;
